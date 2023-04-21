@@ -1,3 +1,9 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '程式解題社'
+theme = 'ananke'
+
+[[menu.main]]
+name = "Interviews"
+url = "/interviews/"
+weight = 2
