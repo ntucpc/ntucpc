@@ -1,5 +1,5 @@
 ---
-title: 訪談 - enip
+title: enip
 draft: false
 summary: Hello
 ---

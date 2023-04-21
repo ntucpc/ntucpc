@@ -1,7 +1,8 @@
 ---
-title: 訪談 - 蔡旻諺
+title: 蔡旻諺
 draft: false
 summary: Hello
+coverImage: "/images/balu.jpg"
 ---
 
 ### 高中篇

@@ -4,6 +4,5 @@ title = '程式解題社'
 theme = 'ananke'
 
 [[menu.main]]
-name = "Interviews"
+name = "訪談紀錄"
 url = "/interviews/"
-weight = 2
