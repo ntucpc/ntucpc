@@ -2,6 +2,7 @@
 title: 訪談 - 蔡旻諺
 draft: false
 summary: Hello
+summarya: test
 type: interviews
 coverImage: /images/balu.jpg
 ---
