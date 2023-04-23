@@ -1,7 +1,7 @@
 ---
 title: 訪談 - 曹宸睿
 draft: false
-summary: Hello
+summary: 2020 年資奧銀牌
 type: interviews
 coverImage: /images/balu.jpg
 ---
