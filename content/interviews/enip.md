@@ -2,7 +2,7 @@
 title: 訪談 - 曹宸睿
 draft: false
 summary: Hello
-coverImage: /images/balu.jpg
+type: interviews
 ---
  
 # 初學篇

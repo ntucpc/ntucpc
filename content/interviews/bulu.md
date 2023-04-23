@@ -2,7 +2,7 @@
 title: 訪談 - 蔡旻諺
 draft: false
 summary: Hello
-coverImage: /images/balu.jpg
+type: interviews
 ---
  
 # 高中篇
