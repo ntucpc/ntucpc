@@ -1,8 +1,11 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://localhost:1313/'
 languageCode = 'en-us'
 title = '程式解題社'
 theme = 'ananke'
 
+Paginate = 3
+disableFastRender = true
+
 [[menu.main]]
-name = "訪談紀錄"
+name = "Interviews"
 url = "/interviews/"
