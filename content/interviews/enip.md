@@ -1,9 +1,12 @@
 ---
-title: 訪談 - 曹宸睿
+title: 曹宸睿
 draft: false
-summary: 2020 年資奧銀牌
+summary: 2020 IOI 國際資訊奧林匹亞競賽 銀牌   
+summary: 2021 YTP 少年圖靈計畫 第一名
+summarya: 2021 ICPC 臺北賽區 第五名
+summary: APCS 5/5
 type: interviews
-coverImage: /images/balu.jpg
+coverImage: /images/enip.jpg
 ---
  
 # 初學篇

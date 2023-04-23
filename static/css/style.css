@@ -5,3 +5,12 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+.smallfont {
+  font-size: 15px;
+  font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
+.link {
+  display: block;
+  text-align: center;
+}
