@@ -1,4 +1,4 @@
-baseURL = 'http://localhost:1313/'
+baseURL = 'https://ntucpc.pages.dev/'
 languageCode = 'en-us'
 title = '程式解題社'
 theme = 'ananke'
@@ -9,3 +9,9 @@ disableFastRender = true
 [[menu.main]]
 name = "Interviews"
 url = "/interviews/"
+
+[environments]
+  [environments.production]
+    baseURL = "https://ntucpc.pages.dev/"
+  [environments.development]
+    baseURL = "http://localhost:1313/"
