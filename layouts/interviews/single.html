@@ -1,7 +1,7 @@
 {{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
 {{ define "main" }}
-  <div class="flex-l mt2 mw8 center">
-    <article class="center cf pv5 ph3 ph4-ns mw7">
+  <div class="flex-l mt2 center interview-container">
+    <article class="center cf pv5 mw7 interview-article">
       <header>
         <h1 class="f1">
           <center>{{ .Title }}</center>
@@ -11,5 +11,33 @@
         {{ .Content }}
       </div>
     </article>
+    <nav class="hide-on-mobile toc-nav interview-flex">
+      <h3 class="ml-1">Table of contents</h3>
+      {{ .TableOfContents }}
+    </nav>
   </div>
+  <script>
+    window.addEventListener('scroll', () => {
+      const titles = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]');
+      console.log(titles)
+      for(const key in titles){
+        console.log(key)
+        if(titles[key].getBoundingClientRect().top > 0){
+          const id = titles[key].getAttribute('id')
+          clearActiveStatesInTableOfContents();
+          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
+          // titles[key].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+          const tocNav = document.getElementsByClassName('toc-nav')[0]
+          console.log(tocNav.scrollTop, document.getElementById(id).offsetTop, tocNav.clientHeight)
+          tocNav.scrollTop = document.getElementById(id).offsetTop - tocNav.clientHeight
+          break;
+        }
+      }
+    })
+    function clearActiveStatesInTableOfContents() {
+      document.querySelectorAll('nav li').forEach((section) => {
+        section.classList.remove('active');
+      });
+    }
+  </script>
 {{ end }}

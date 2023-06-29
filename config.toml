@@ -15,3 +15,10 @@ url = "/interviews/"
     baseURL = "https://ntucpc.pages.dev/"
   [environments.development]
     baseURL = "http://localhost:1313/"
+
+[params]
+  custom_css = ["css/style.css", "css/toc.css"]
+
+[markup.tableOfContents]
+  endLevel = 6
+  startLevel = 1
