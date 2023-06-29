@@ -19,17 +19,15 @@
   <script>
     window.addEventListener('scroll', () => {
       const titles = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id]');
-      console.log(titles)
       for(const key in titles){
-        console.log(key)
         if(titles[key].getBoundingClientRect().top > 0){
           const id = titles[key].getAttribute('id')
-          clearActiveStatesInTableOfContents();
-          document.querySelector(`nav li a[href="#${id}"]`).parentElement.classList.add('active');
-          // titles[key].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'nearest' });
+          const tocEntry = document.querySelector(`nav li a[href="#${id}"]`)
           const tocNav = document.getElementsByClassName('toc-nav')[0]
-          console.log(tocNav.scrollTop, document.getElementById(id).offsetTop, tocNav.clientHeight)
-          tocNav.scrollTop = document.getElementById(id).offsetTop - tocNav.clientHeight
+          clearActiveStatesInTableOfContents();
+          tocEntry.parentElement.classList.add('active');
+          // console.log(tocNav.scrollTop, tocEntry.getBoundingClientRect().top, tocNav.clientHeight, tocEntry.offsetTop, tocEntry.offsetHeight)
+          tocNav.scrollTop = tocEntry.offsetTop - tocNav.clientHeight + tocEntry.offsetHeight + 50
           break;
         }
       }
